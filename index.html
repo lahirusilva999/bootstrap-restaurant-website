@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <title>Assignment2-CSS</title>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <style>
+	
+    .upperhead {
+        text-align: center;
+    }
+    .upperhead a{
+        font-size: 30px;
+        color: #333;
+    }
+    .navcenter{
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        display: inline-block;
+    }
+    .navcenter li.nav-item {
+        display: inline-block;
+        width: 19%;
+        background: #d7d427;
+		
+    }
+    .navcenter li.nav-item a{
+        color: #333;
+		font-size:24px;
+        font-weight: bold;
+		
+    }
+	
+	.navcenter li.nav-item a:hover{
+		background-color:black;
+        color: white;
+		
+		
+    }
+	
+	
+    #navbarSupportedContent {
+        display: block;
+        text-align: center;
+    }
+    #sectionone, #sectiontwo, #sectionthree{
+        background: rgb(36,0,36);
+        background: linear-gradient(90deg, rgba(36,0,36,1) 0%, rgba(217,22,170,1) 50%, rgba(81,0,255,1) 100%);
+		padding-bottom:15px;
+		margin:!important
+    }
+    #imgtext {
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.container.sectionone-inner {
+    position: relative;
+	
+}
+#imgtext .maintext {
+    background: #d7d427;
+    padding: 7px 0px;
+    width: 300px;
+}
+#imgtext .subtext {
+    background: #d7d427;
+    padding: 3px 0px;
+    width: 150px;
+    margin-top: 20px;
+}
+.col-md-5.sectionone-rightcol {
+    position:relative;
+    height: 100%;
+    margin: 0;
+}
+.row.fcol,
+.row.scol {
+    height: 50%;
+    background: #d7d427;
+    width: 98%;
+    padding: 7% 0;
+}
+
+.row.fcol p,
+.row.scol p{
+    font-size: 35px;
+}
+
+.row.fcolsub p {
+	font-size:18px;
+	text-align:center;
+	padding-right:50px;
+	
+	}
+
+.row.scol{
+    margin-top: 20px;
+}
+#sectiontwo, #sectionthree{
+    margin-top: 30px;
+}
+.iconsecwrapper {
+    background: #fff;
+    margin-top: 25px;
+	padding-bottom: 12px;
+}
+.iconsecwrapper img {
+    text-align: center;
+    margin: 10px 0;
+}
+.iconsecwrapper .iconhead {
+    text-align: center;
+    font-weight: 600;
+}
+.iconsecwrapper .descr {
+    text-align: center;
+    margin: 0 30px;
+    font-size: 15px;
+}
+.tacoofday {
+    margin-top: 22px;
+    background: #fff;
+    padding: 40px 15px;
+}
+.tacotxt, .tacotxt p {
+    text-align: left;
+}
+.tacotxt p.sec {
+    margin-bottom: 45px;
+}
+.tacotxt h3{
+    text-align: left;
+    font-size: 32px;
+}
+.btns {
+    background: #d7d427;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.imgcontainer {
+    margin-bottom: 20px;
+}
+.imgcontainer img {
+    width: 100%;
+}
+#sectionthree{
+    margin-bottom: 30px;
+}
+
+
+    </style>
+    <body>
+        <div id="sectionone" class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container" style="padding-left: 0;padding-right: 0;">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav navcenter">
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">TACOS</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">BEERS</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">WINES</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">DESSERTS</a></li>
+                            <li class="nav-item"><a class="nav-link" aria-current="page" href="#">RESERVATIONS</a> </li>     
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container sectionone-inner" style="padding-left: 0;padding-right: 0;">
+                <div class="text-center row">
+                    <div class="col-md-7">
+                        <img src="assets/img1.jpg" alt="img1">
+                        <div id="imgtext">
+                            <h3 class="maintext">Terry's Taco Joint</h3>
+                            <p class="subtext">Pretty Good Tacos</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 sectionone-rightcol">
+                        <div class="row fcol">
+                            <p>$ 1.99</p>
+                            <h5> Tacos </h5>
+                         
+                         
+                        </div>
+                        <div class="row scol">
+                             <p>$ 3.99 </p>
+                             <h5> Kombucha </h5>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="sectiontwo" class="container">
+            <div class="text-center row">
+                <div class="col-md-3">
+                    <div class="iconsecwrapper">
+                        <img src="assets/taco.jpg" alt="taco icon">
+                        <h5 class="iconhead">TACOS</h5>
+                        <p class="descr">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Laborum id, adipisci consequuntur</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="iconsecwrapper">
+                        <img src="assets/beer.jpg" alt="beericon">
+                        <h5 class="iconhead">Beer</h5>
+                        <p class="descr">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Laborum id, adipisci consequuntur</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="iconsecwrapper">
+                        <img src="assets/Wine.jpg" alt="wineicon">
+                        <h5 class="iconhead">WINE</h5>
+                        <p class="descr">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Laborum id, adipisci consequuntur</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="iconsecwrapper">
+                        <img src="assets/music.jpg" alt="musicicon">
+                        <h5 class="iconhead">Beer</h5>
+                        <p class="descr">Lorem ipsum, dolor, sit amet consectetur adipisicing elit. Laborum id, adipisci consequuntur</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tacoofday">
+                <div class="text-center row">
+                    <div class="col-md-3">
+                        <img src="assets/taco2.jpg" alt="taco2">
+                    </div>
+                    <div class="col-md-9 tacotxt">
+                        <h3>Feaured taco</h3>
+                        <p>Lorem ipsum, dolor, sit amet</p>
+                        <p class="sec">Lorem ipsum, dolor, sit amet</p>
+                        <a href="#" class="btns">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="sectionthree" class="container"> 
+            <div class="text-center">
+                <div class="imagelist-title">
+                 <p  style=" padding-top:5px; font-weight:bold; font-size:24px"> Instagrams </p>
+                </div>
+                <div class="imageswrapper text-center row">
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist1.jpg" alt="imglist1">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist2.jpg"alt="imglist2">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist3.jpg" alt="imglist3">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist4.jpg"  alt="imglist4">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist5.jpg" alt="imglist5">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist6.jpg" alt="imglist6">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist7.jpg" alt="imglist7">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist8.jpg" alt="imglist8">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist9.jpg" alt="imglist9">
+                    </div>
+                    <div class="col-md-2 imgcontainer">
+                        <img src="assets/imglist10.jpg" alt="imglist10">
+                                           </div>
+                    
+                </div>
+            </div>
+        </div>
+
+       
+    </body>
+</html>
